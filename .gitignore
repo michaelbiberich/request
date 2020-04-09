@@ -1,0 +1,8 @@
+# vs code files
+.vscode
+
+# test file
+index.php
+
+# third party packages
+/vendor

@@ -1,0 +1,27 @@
+{
+    "name": "bera/joy",
+    "description": "a simple request wrapper",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["http","request", "api call"],
+    "authors": [
+        {
+            "name": "Joy Kumar Bera",
+            "email": "joykumarbera@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0",
+        "ext-curl" : "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bera\\Joy\\" : "src/"
+        }
+    }
+}
