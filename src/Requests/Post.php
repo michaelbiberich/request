@@ -19,6 +19,7 @@ class Post extends BaseRequest implements RequestInterface
     }
     
     /**
+     * @param array $pay_load
      * @return string
      */
     public function fireRequest(array $pay_load=[]) : string

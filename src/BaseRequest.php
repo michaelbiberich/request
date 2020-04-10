@@ -42,6 +42,9 @@ abstract class BaseRequest
         $this->openCurlHandle();
     }
 
+    /**
+     * @return void
+     */
     protected function openCurlHandle()  : void
     {
         if(!is_null($this->ch))
@@ -49,6 +52,9 @@ abstract class BaseRequest
         $this->ch = curl_init();
     }
 
+    /**
+     * @return void
+     */
     protected function closeCurlHandle() : Void
     {
         if(is_null($this->ch))
@@ -63,10 +69,10 @@ abstract class BaseRequest
      */
     protected function setUrl(string $url, array $params) : void 
     {
-        if( empty( $url ) ) {
+        if( empty( $url ) ) 
+        {
             throw new InvalidArgumentException('url must be given');
         } 
-       
     }
 
     /**
@@ -79,8 +85,9 @@ abstract class BaseRequest
 
 
     /**
-     * bulid query parms
+     * bulid query params
      * @param $query_str
+     * @return void
      */
     protected function buildParams(array $query_str) : void
     {

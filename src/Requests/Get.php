@@ -13,6 +13,11 @@ class Get extends BaseRequest implements RequestInterface
         parent::__construct();
     }
 
+    /**
+     * @param string $url
+     * @param array $params
+     * @return void
+     */
     public function setUrl( string $url, array $params) : void
     {
         parent::setUrl($url, $params);
@@ -25,6 +30,7 @@ class Get extends BaseRequest implements RequestInterface
     }
 
     /**
+     * @param string $pay_load
      * @return string
      */
     public function fireRequest(array $pay_load=[]) : string
