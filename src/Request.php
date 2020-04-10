@@ -34,7 +34,7 @@ class Request
     /**
      * @param string $url
      * @param array $params
-     * @return object
+     * @return Request
      */
     public function get( string $url, array $params=[])
     {
@@ -47,7 +47,7 @@ class Request
     /**
      * @param string $url
      * @param array $params
-     * @return object
+     * @return Request
      */
     public function post(string $url, array $payload = [])
     {
