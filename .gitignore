@@ -6,3 +6,5 @@ index.php
 
 # third party packages
 /vendor
+
+.phpunit.result.cache
